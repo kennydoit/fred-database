@@ -1,0 +1,40 @@
+start_date: "2018-01-01"
+
+common_series:
+  GDP and Output:
+    - GDPC1      # Real Gross Domestic Product
+    - GDP        # Gross Domestic Product
+    - GDPPOT     # Real Potential Gross Domestic Product
+  Employment:
+    - UNRATE     # Unemployment Rate
+    - CIVPART    # Labor Force Participation Rate
+    - PAYEMS     # All Employees, Total Nonfarm
+    - EMRATIO    # Employment-Population Ratio
+  Inflation:
+    - CPIAUCSL   # Consumer Price Index for All Urban Consumers
+    - CPILFESL   # Core CPI (Less Food & Energy)
+    - PCEPI      # Personal Consumption Expenditures Price Index
+    - PCEPILFE   # Core PCE Price Index
+  Interest Rates:
+    - FEDFUNDS   # Federal Funds Rate
+    - DGS10      # 10-Year Treasury Rate
+    - DGS2       # 2-Year Treasury Rate
+    - DGS30      # 30-Year Treasury Rate
+    - TB3MS      # 3-Month Treasury Bill
+  Money Supply:
+    - M1SL       # M1 Money Stock
+    - M2SL       # M2 Money Stock
+    - BASE       # Monetary Base
+  Consumer Spending:
+    - PCE        # Personal Consumption Expenditures
+    - PCEDG      # PCE: Durable Goods
+    - PCEND      # PCE: Nondurable Goods
+    - PCESV      # PCE: Services
+  Housing:
+    - HOUST        # Housing Starts
+    - CSUSHPISA    # Case-Shiller Home Price Index
+    - MORTGAGE30US # 30-Year Fixed Rate Mortgage Average
+  Stock Market:
+    - SP500      # S&P 500
+    - NASDAQCOM  # NASDAQ Composite Index
+    - DJIA       # Dow Jones Industrial Average

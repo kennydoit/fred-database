@@ -1,0 +1,42 @@
+[project]
+name = "fred-database"
+version = "0.1.0"
+description = "A Python application for extracting Federal Reserve Economic Data (FRED) and storing it in a database for analysis"
+readme = "README.md"
+requires-python = ">=3.8.1"
+dependencies = [
+    "pandas>=2.0.0",
+    "requests>=2.31.0",
+    "python-dotenv>=1.0.0",
+    "fredapi>=0.5.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+fred-setup = "src.setup_database:main"
+fred-extract = "scripts.extract_common_series:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
