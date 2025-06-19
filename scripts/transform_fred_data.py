@@ -2,7 +2,7 @@ import os
 import sqlite3
 import pandas as pd
 
-DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'fred_data.db')
+DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'database', 'fred_data.db')
 
 def fetch_observations():
     conn = sqlite3.connect(DB_PATH)

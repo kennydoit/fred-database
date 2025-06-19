@@ -4,7 +4,7 @@ Database setup script for FRED data storage.
 import sqlite3
 import os
 
-DB_DIR = os.path.join(os.path.dirname(__file__), '..', 'data')
+DB_DIR = os.path.join(os.path.dirname(__file__), '..', 'database')
 os.makedirs(DB_DIR, exist_ok=True)
 DB_PATH = os.path.join(DB_DIR, 'fred_data.db')
 

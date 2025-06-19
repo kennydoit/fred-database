@@ -21,7 +21,7 @@ common_series = config.get("common_series", {})
 
 fred = Fred(api_key=api_key)
 
-DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'fred_data.db')
+DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'database', 'fred_data.db')
 
 def upsert_series_metadata(cur, series_id):
     try:
